@@ -1,0 +1,20 @@
+.link{
+  color: aqua;
+  font-size: 20px;
+}
+
+.hover :hover{
+  color:chartreuse
+}
+
+body{
+  background-color: rgb(171, 171, 202);
+}
+
+footer{
+  color: aliceblue;
+}
+
+.smoly{
+  font-size: 10px;
+}
