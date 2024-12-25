@@ -3,20 +3,27 @@
   font-size: 20px;
 }
 
-.hover :hover{
-  color:chartreuse
+.act_btn {
+  background-color: rgb(42, 52, 68);
+  transition-duration: 0.4s;
+  cursor: pointer;
+
 }
+/* .act_btn :hover{
+  background-color: white;
+  background-color: rgb(25, 36, 59);
+} */
 
 body{
-  background-color: rgb(171, 171, 202);
+  background-image: linear-gradient(#22314f 70%, #19243B, #111827);
 }
 
 footer{
-  color: aliceblue;
+  background-color: #101726;
 }
 
 .transition {
-  background-image: linear-gradient(rgba(17,24,39,1) 35%, rgb(171, 171, 202,1));
+  background-image: linear-gradient(#111827 30%, #22314f);
 }
 
 .smoly{
@@ -35,11 +42,14 @@ footer{
   max-width: 1000px;
   position: relative;
   margin: auto;
+  
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+  border: #e00000; 
+  border-radius: 1100px;
 }
 
 /* Next & previous buttons */

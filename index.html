@@ -12,6 +12,16 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script>
+      tailwind.config = {
+        theme: {
+            colors: {
+              clifford: '#da373d',        
+              ACTBTNBG: '#19243b'
+            }
+        }
+      }
+    </script>
     <!-- <script>
       let slideIndex = 1;
       showSlides(slideIndex);
@@ -42,8 +52,9 @@
       </script> -->
 </head>
 <body onload="showSlides(1)">
-   <header class="text-gray-400 bg-gray-900 body-font">
-      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+  
+   <header class="text-gray-400 bg-gray-900 body-font" style="width: 100%;">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center" style="position: fixed; background-image: linear-gradient(rgba(17,24,39,1) , rgb(171, 171, 202,0)); text-align: center; max-width: 100%; z-index: 999999;">
         <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
           <img src="./images/logo.png" style="width: 50px;">
           <span class="ml-3 text-xl">◥CRATER ❆ WORLD ❆ STUDIOS◤</span>
@@ -54,11 +65,16 @@
           <a class="mr-6 hover:text-white" href=""><b>Feedback and Support</b></a>
           <a class="mr-6 hover:text-white" href=""><b>About Us</b></a>
         </nav>
-        <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-green-700 rounded text-base mt-4 md:mt-0 hover"><p class="hover"><i><b><a href="">Join Team</a></b></i></p>
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+
+
+        <button class="inline-flex items-center bg-gray-900 border-0 py-1 px-3 focus:outline-none hover:bg-gray-800 rounded text-base mt-4 md:mt-0 hover:text-white">
+          <i><b>Join Team</b></i>
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1 hover:text-white" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
         </button>
+
+        <hr>
       </div>
     </header>
 
@@ -212,6 +228,10 @@
   </div>
 </section>
 
+<div>
+  <img src="" alt="">
+</div>
+
 
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto">
@@ -220,15 +240,15 @@
         <div class="rounded-lg h-64 overflow-hidden">
           <img alt="content" class="object-cover object-center h-full w-full" src="./images/web yt Banner.png">
         </div>
-        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">CWS with Youtube!</h2>
-        <p class="leading-relaxed text-base">We are Now On Youtube To Post Devlogs and Announcements</p>
+        <h2 class="title-font text-3xl font-medium text-white-900 mt-6 mb-3" style="color: white;">CWS with Youtube!</h2>
+        <p class="leading-relaxed text-m" style="color: rgb(179, 176, 176);">We are Now On Youtube To Post Devlogs and Announcements</p>
         <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-600 rounded"><a href="https://www.youtube.com/channel/UCSCdbFHu9dOMihXP0vByKTw" target="_blank">Take Me</a></button>
       </div>
       <div class="sm:w-1/2 mb-10 px-4">
         <div class="rounded-lg h-64 overflow-hidden">
           <img alt="content" class="object-cover object-center h-full w-full" src="./images/credeban.png">
         </div>
-        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">CREDE : New World</h2>
+        <h2 class="title-font text-3xl font-medium text-gray-900 mt-6 mb-3" style="color: white;">CREDE : New World</h2>
         <p class="leading-relaxed text-base"><b>Under Development</b></p>
         <button class="flex mx-auto mt-6 text-white bg-purple-500 border-0 py-2 px-5 focus:outline-none hover:bg-purple-600 rounded">Take Me</button>
       </div>
@@ -239,65 +259,66 @@
 
 <br>
 <br>
+<div >
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
 
-<!-- Slideshow container -->
-<div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="./images/menu.jpg" style="width:100%">
+      <div class="text">CREDE: New World</div>
+    </div>
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 4</div>
-    <img src="./images/menu.jpg" style="width:100%">
-    <div class="text">CREDE: New World</div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="https://www.teahub.io/photos/full/212-2124487_nature-jungle-forest-planets-fantasy-art-alien-landscapes.jpg" style="width:100%">
+      <div class="text">Open World Adventure</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="https://cdna.artstation.com/p/assets/images/images/003/306/386/large/oleg-leshiy-shekhovtsov-seed-ill.jpg?1472230887" style="width:100%">
+      <div class="text">Unknown Creatures</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="https://wallpapers.com/images/hd/firewatch-forest-scenery-1jb6bbfx3a7hmtnn.webp" style="width:100%">
+      <div class="text">Survive Alone</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)"> 〈 </a>
+    <a class="next" onclick="plusSlides(1)"> 〉 </a>
   </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 4</div>
-    <img src="https://www.teahub.io/photos/full/212-2124487_nature-jungle-forest-planets-fantasy-art-alien-landscapes.jpg" style="width:100%">
-    <div class="text">Open World Adventure</div>
-  </div>
+  <br>
+  <br>
 
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 4</div>
-    <img src="https://cdna.artstation.com/p/assets/images/images/003/306/386/large/oleg-leshiy-shekhovtsov-seed-ill.jpg?1472230887" style="width:100%">
-    <div class="text">Unknown Creatures</div>
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span>
+    <span class="dot"></span> 
   </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 4</div>
-    <img src="https://wallpapers.com/images/hd/firewatch-forest-scenery-1jb6bbfx3a7hmtnn.webp" style="width:100%">
-    <div class="text">Survive Alone</div>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)"> 〈 </a>
-  <a class="next" onclick="plusSlides(1)"> 〉 </a>
 </div>
-
 <br>
 <br>
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span>
-  <span class="dot"></span> 
-</div>
 
-
-<hr>
-
-   <footer class="text-gray-600 body-font">
+   <footer class="text-gray-600 body-font" >
       <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
         <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
           <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-            <span class="ml-0 text-xl">Crater World Studios.co</span>
+            <span class="ml-0 text-2xl" style="color:#6A7CA2;">Crater World Studios.co</span>
           </a>
           <p class="mt-2 text-sm text-gray-500"><b>A World Of Fun and Entertainment.</b> We try our best to make the World and You Happy!</p>
         </div>
         <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
           <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Games and Project</h2>
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3" style="color: 		#6A7CA2;">Games and Project</h2>
             <nav class="list-none mb-10">
               <li>
                 <a class="text-gray-600 hover:text-gray-800">Games</a>
@@ -312,7 +333,7 @@
             </nav>
           </div>
           <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Discord</h2>
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3" style="color: 		#6A7CA2;">Discord</h2>
             <nav class="list-none mb-10">
               <li>
                 <a class="text-gray-600 hover:text-gray-800">Discord Server</a>
@@ -329,7 +350,7 @@
             </nav>
           </div>
           <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Game Departments</h2>
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3" style="color: 		#6A7CA2;">Game Departments</h2>
             <nav class="list-none mb-10">
               <li>
                 <a class="text-gray-600 hover:text-gray-800">Music Team</a>
@@ -346,7 +367,7 @@
             </nav>
           </div>
           <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Company</h2>
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3" style="color: 		#6A7CA2;">Company</h2>
             <nav class="list-none mb-10">
               <li>
                 <a class="text-gray-600 hover:text-gray-800">About Us</a>
@@ -379,4 +400,5 @@
     </footer>
 </body>
 <script src="./app.js"></script>
+<script src="./twconfig.js"></script>
 </html>
